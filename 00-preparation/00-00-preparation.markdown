@@ -15,7 +15,7 @@ Preparation
 3. Sign up for a GitHub Account
 4. Install git (Xcode does this for you on the Mac)
 5. Configure your git name and email
-6. Configure you SSH settings for git
+6. Configure you SSH settings for git and github
 
 
 ## Resources
