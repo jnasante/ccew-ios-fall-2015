@@ -482,3 +482,30 @@ Modify the property declaration for `objectTitle` so that it is marked  `strong`
 ```
 
 Run the application and press the button again. Now `@"foo"` is correctly logged to the console. Why?
+
+**Insight**
+
+Make the property `weak` again and in the `viewDidLoad` method set the title to a string literal:
+
+```
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  self.objectTitle = @"foo";
+}
+```
+
+This works. When you press the button the correct value is logged to the console. Why? What is different about using a string literal?
+
+Now try it with a string variable that is created directly from a literal, like so:
+
+```
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  self.objectTitle = [NSString stringWithString:@"foo"];
+}
+```
+
+It still works, even though we're clearly instructing the compiler to create a new string in memory that should be released as soon as this method finishes executing. Why does it work?
+
