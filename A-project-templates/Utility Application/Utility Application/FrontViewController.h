@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FrontViewController.h
 //  Utility Application
 //
 //  Created by Philip Dow on 8/27/15.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FrontViewController : UIViewController
 
+- (IBAction)flip:(id)sender;
 
 @end
 

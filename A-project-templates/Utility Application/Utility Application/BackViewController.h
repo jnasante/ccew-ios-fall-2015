@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class BackViewController;
+
+@protocol BackViewControllerDelegate <NSObject>
+
+- (void) backViewControllerDidFinish:(BackViewController*)aController;
+
+@end
+
+#pragma mark -
+
 @interface BackViewController : UIViewController
+
+@property (weak, nonatomic) id<BackViewControllerDelegate> delegate;
+
+- (IBAction)done:(id)sender;
 
 @end
