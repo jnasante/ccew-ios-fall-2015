@@ -21,6 +21,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Text View Delegate
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -28,8 +30,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let text = textField.text
         let URL = NSURL(string: text)
         
-        if let URLNotNil = URL {
-            let request = NSURLRequest(URL: URLNotNil)
+        if let URL = URL {
+            let request = NSURLRequest(URL: URL)
             webView.loadRequest(request)
         }
         
