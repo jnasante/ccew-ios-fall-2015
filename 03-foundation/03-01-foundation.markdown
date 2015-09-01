@@ -45,7 +45,7 @@ We cannot use subscripting operators such as `[]` to get characters in a string.
 
 Example usage:
 
-```objective-c
+```
 NSString *uppercase = @"UPPERCASE";
 NSString *lowercase = [uppercase lowercaseString];
 
@@ -246,15 +246,15 @@ What is the difference between `3.14` and `@3.14`? Just as obj-c provides a stri
 If you examine the class documentation you’ll notice that most `NSNumber` methods deal with wrapping primitive data types and making them accessible again, eg:
 
 ```objective-c
- NSNumber *number = [NSNumber numberWithInteger:42];
- NSInteger integer = [number integerValue];
- ```
+NSNumber *number = [NSNumber numberWithInteger:42];
+NSInteger integer = [number integerValue];
+```
  
- Note the `isEqualTo:` variant for `NSNumber` objects:
+Note the `isEqualTo:` variant for `NSNumber` objects:
  
- ```objective-c
- - (BOOL)isEqualToNumber:(NSNumber *)aNumber
- ```
+```objective-c
+- (BOOL)isEqualToNumber:(NSNumber *)aNumber
+```
 
 Just like it is generally easy to convert a string to a number using the `NSString` methods or string formatting, it is also easy to convert an `NSNumber` to a string:
 

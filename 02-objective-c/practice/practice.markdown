@@ -21,11 +21,11 @@ Hint: Use the `UITextFieldDelegate` code from the first assignment to respond to
 
 ## Assignment 3
 
-Create a new Single View Application. Create a new class for your application called `CCBusiness`. Your class encapsulates the information for a local business, such as the business name, the type of business, e.g. “food service” or “clothing”, the phone number and the address, city, state and zip code.
+Create a new Single View Application. Create a new class for your application called `CCBusiness`. It should subclass from the base `NSObject` class. Your class encapsulates the information for a local business, such as the business name, the type of business, e.g. “food service” or “clothing”, the phone number and the address, city, state and zip code.
 
 Create properties for each of these pieces of information. They should all be strings. Create a constructor method (`init`) that sets all these properties to empty strings, and create another constructor that lets you specify the business name when you create a new instance of `CCBusiness`.
 
-In the `viewDidLoad` method of your view controller, create a local instance of a business, set its properties, and then retrieve and log each of its properties to the console.
+In the `viewDidLoad` method of your view controller, create a local instance of a business, set its properties, and then retrieve and log each of its properties to the console. Don't forget to import your CCBusiness.h file!
 
 Hint: Use `NSLog` to log a value to the console. Log object values like this:
 
