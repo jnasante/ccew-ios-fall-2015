@@ -45,8 +45,9 @@ class BackViewController: UIViewController {
     }
     
     @IBAction func done(sender: AnyObject) {
-        if let del = delegate {
-            del.backViewControllerDidFinish(self)
+        // I'm shadowing the optional here, which I think is the correct idiom
+        if let delegate = delegate {
+            delegate.backViewControllerDidFinish(self)
         }
     }
     

@@ -30,8 +30,9 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func done(sender: AnyObject) {
-        if let del = delegate {
-            del.thirdViewControllerDidFinish(self)
+        // Shadowing the optional
+        if let delegate = delegate {
+            delegate.thirdViewControllerDidFinish(self)
         }
     }
     
