@@ -234,4 +234,4 @@ The first code you write when you tackle a problem should not be the last, becau
 
 [1] [Code Refactoring on Wikipedia](http://en.wikipedia.org/wiki/Code_refactoring)
 
-[2] [Fowler's Refactoring on Amazon](http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672)
+[2] [Fowler's Refactoring on Amazon](http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672) w
